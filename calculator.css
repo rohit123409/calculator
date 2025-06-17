@@ -1,0 +1,19 @@
+.calculator{
+    border: 2px solid black;
+    width: 300px;
+    border-radius: 5px;
+    display: inline-block;
+    justify-content: center;
+
+}
+.display{
+    width: 90%;
+    margin: 2px 10px;
+    font-size: xx-large;
+}
+.button{
+    width: 60px;
+    height: 50px;
+    margin: 5px;
+  
+}
