@@ -1,85 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calculator</title>
     <link rel="stylesheet" href="calculator.css">
 </head>
+
 <body>
     <div class="calculator">
-        <input type="text" class="display" id="display" readonly>
+        <input type="text" class="display" id="display" readonly >
+        <div class="border"></div>
+        <div class="buttons">
             <button class="button" onclick="inputdisplay='';
             document.querySelector('#display').value =
             inputdisplay;
             ">c</button>
-            <button class="button" onclick="inputdisplay= inputdisplay + `1`;
+        <button class="button" onclick="inputdisplay= inputdisplay + `1`;
             document.querySelector('#display').value =
             inputdisplay;
             ">1</button>
-            <button class="button" onclick="inputdisplay=inputdisplay+`2`;
+        <button class="button" onclick="inputdisplay=inputdisplay+`2`;
             document.querySelector('#display').value =
             inputdisplay;
             ">2</button>
-            <button class="button" onclick="inputdisplay=inputdisplay+`3`;
+        <button class="button" onclick="inputdisplay=inputdisplay+`3`;
             document.querySelector('#display').value =
             inputdisplay;
             ">3</button>
-            <button class="button" onclick="inputdisplay=inputdisplay+`+`;
+        <button class="button" onclick="inputdisplay=inputdisplay+`+`;
             document.querySelector('#display').value =
             inputdisplay;
             ">+</button>
-            <button class="button" onclick="inputdisplay=inputdisplay+`4`;
+        <button class="button" onclick="inputdisplay=inputdisplay+`4`;
             document.querySelector('#display').value =
             inputdisplay;
             ">4</button>
-            <button class="button" onclick="inputdisplay=inputdisplay+`5`;
+        <button class="button" onclick="inputdisplay=inputdisplay+`5`;
             document.querySelector('#display').value =
             inputdisplay;
             ">5</button>
-            <button class="button" onclick="inputdisplay=inputdisplay+`6`;
+        <button class="button" onclick="inputdisplay=inputdisplay+`6`;
             document.querySelector('#display').value =
             inputdisplay;
             ">6</button>
-            <button class="button" onclick="inputdisplay=inputdisplay+`-`;
+        <button class="button" onclick="inputdisplay=inputdisplay+`-`;
             document.querySelector('#display').value =
             inputdisplay;
             ">-</button>
-            <button class="button" onclick="inputdisplay=inputdisplay+`7`;
+        <button class="button" onclick="inputdisplay=inputdisplay+`7`;
             document.querySelector('#display').value =
             inputdisplay;
             ">7</button>
-            <button class="button" onclick="inputdisplay=inputdisplay+`8`;
+        <button class="button" onclick="inputdisplay=inputdisplay+`8`;
             document.querySelector('#display').value =
             inputdisplay;
             ">8</button>
-            <button class="button" onclick="inputdisplay=inputdisplay+`9`;
+        <button class="button" onclick="inputdisplay=inputdisplay+`9`;
             document.querySelector('#display').value =
             inputdisplay;
             ">9</button>
-            <button class="button" onclick="inputdisplay=inputdisplay+`*`;
+        <button class="button" onclick="inputdisplay=inputdisplay+`*`;
             document.querySelector('#display').value =
             inputdisplay;
             ">*</button>
-            <button class="button" onclick="inputdisplay=inputdisplay+`0`;
+        <button class="button" onclick="inputdisplay=inputdisplay+`0`;
             document.querySelector('#display').value =
             inputdisplay;
             ">0</button>
-            <button class="button" onclick="inputdisplay=inputdisplay+`/`;
+        <button class="button" onclick="inputdisplay=inputdisplay+`/`;
             document.querySelector('#display').value =
             inputdisplay;
             ">/</button>
-            <button class="button" style="background-color: aqua;"
-            onclick="
+        <button class="button" style="background-color: aqua;" onclick="
             let result =eval(inputdisplay)
             inputdisplay= result;
             document.querySelector('#display').value =
             inputdisplay;">=</button>
+        </div>
     </div>
     <script>
         let inputdisplay = '';
         document.querySelector('#display').value =
-        inputdisplay;
+            inputdisplay;
     </script>
 </body>
+
 </html>
